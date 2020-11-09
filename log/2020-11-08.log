@@ -1,0 +1,482 @@
+2020-11-08 08:30:55.123 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 27448 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 08:30:55.131 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 08:30:57.552 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 3.411 seconds (JVM running for 7.257)
+2020-11-08 08:30:57.687 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 08:31:40.777 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 08:31:40.777 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068010FFFFFF000580FC6800007514
+2020-11-08 08:31:40.782 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF000580FC680000E514
+2020-11-08 08:31:40.810 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 08:31:42.396 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 08:34:11.868 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 08:34:11.869 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068010FFFFFF003D5108656020400349172303012011FFFFFFFFFFFF7B550000FFFFFF190808340370036900000000000000000000000000002031000000000000FFFFFFFF5214
+2020-11-08 08:34:11.872 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F7B5500006014
+2020-11-08 08:49:14.911 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2020-11-08 08:49:14.912 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFF817E0000FFFFFF1A0808490370037000000000000000000000000000002050000000000000FFFFFFFFAD14
+2020-11-08 08:49:14.913 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F817E00008F14
+2020-11-08 08:57:53.349 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 24500 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 08:57:53.362 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 08:57:56.798 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 4.356 seconds (JVM running for 8.239)
+2020-11-08 08:57:56.902 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 08:58:52.788 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 08:58:52.789 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFFB1150000FFFFFF1A0808580369036900000000000000000000000000002062000000000000FFFFFFFF8714
+2020-11-08 08:58:52.796 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FB11500005614
+2020-11-08 08:58:52.836 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 08:58:54.490 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 08:58:54.584 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 收到非测试计划中的燃气表上报数据，发送结束报文
+2020-11-08 08:58:54.594 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2011080858540000FFFFFF090854000AFFFF4514
+2020-11-08 09:09:02.081 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 09:09:02.082 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFFFA4F0000FFFFFF1A0809090369036900000000000000000000000000002075000000000000FFFFFFFFCF14
+2020-11-08 09:09:02.083 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FFA4F0000D914
+2020-11-08 09:09:02.152 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 收到非测试计划中的燃气表上报数据，发送结束报文
+2020-11-08 09:09:02.153 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2011080909020000FFFFFF091902000AFFFF6414
+2020-11-08 09:13:55.731 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2020-11-08 09:13:55.732 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFFFA0E0000FFFFFF1B0809140369036900000000000000000000000000002081000000000000FFFFFFFFA614
+2020-11-08 09:13:55.734 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FFA0E00009814
+2020-11-08 09:13:55.816 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 该燃气表设备已经测试过升级加密插件，收到重复测试
+2020-11-08 09:13:55.817 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2011080913550000FFFFFF092355000AFFFF1E14
+2020-11-08 09:13:55.818 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 已发送切换正式服务器命令
+2020-11-08 09:16:35.066 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 6428 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 09:16:35.074 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 09:16:37.129 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.932 seconds (JVM running for 7.84)
+2020-11-08 09:16:37.286 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 09:16:49.871 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 09:16:49.871 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFFA90F0000FFFFFF1B0809160370036900000000000000000000000000002087000000000000FFFFFFFF6514
+2020-11-08 09:16:49.880 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FA90F00004814
+2020-11-08 09:16:49.928 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 09:16:52.057 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 09:17:35.018 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 该燃气表设备已经测试过升级加密插件，收到重复测试
+2020-11-08 09:17:35.195 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-11-08 09:17:35.266 [nioEventLoopGroup-2-1] WARN  o.s.j.support.SQLErrorCodesFactory - Error while extracting database name
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363)
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140)
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:141)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:102)
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:122)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:473)
+	at com.simit.data.JdbcGasAddressRepository.findOne(JdbcGasAddressRepository.java:31)
+	at com.simit.data.JdbcGasAddressRepository$$FastClassBySpringCGLIB$$9bc8e76b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcGasAddressRepository$$EnhancerBySpringCGLIB$$2c5dc3c5.findOne(<generated>)
+	at com.simit.netty.ServerHandler.sendModifiedNetParamCommand(ServerHandler.java:293)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:212)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337)
+	... 44 common frames omitted
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	... 45 common frames omitted
+2020-11-08 09:17:35.269 [nioEventLoopGroup-2-1] WARN  o.s.j.support.SQLErrorCodesFactory - Error while extracting database name
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363)
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140)
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97)
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:473)
+	at com.simit.data.JdbcGasAddressRepository.findOne(JdbcGasAddressRepository.java:31)
+	at com.simit.data.JdbcGasAddressRepository$$FastClassBySpringCGLIB$$9bc8e76b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcGasAddressRepository$$EnhancerBySpringCGLIB$$2c5dc3c5.findOne(<generated>)
+	at com.simit.netty.ServerHandler.sendModifiedNetParamCommand(ServerHandler.java:293)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:212)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337)
+	... 45 common frames omitted
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	... 46 common frames omitted
+2020-11-08 09:17:35.278 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F8134372E3130332E34352E313135000000000000000000000000000000000000001F99A90F0000FFFFFFFFFFFFFFFF1D14
+2020-11-08 09:17:35.279 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 已发送切换正式服务器命令
+2020-11-08 09:17:35.293 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-11-08 09:17:54.425 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 25892 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 09:17:54.433 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 09:17:56.076 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.423 seconds (JVM running for 5.058)
+2020-11-08 09:17:56.164 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 09:18:09.201 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 09:18:09.201 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFF9C3B0000FFFFFF1A0809180369036700000000000000000000000000002087000000000000FFFFFFFF7C14
+2020-11-08 09:18:09.206 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F9C3B00006714
+2020-11-08 09:18:09.230 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 09:18:10.756 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 09:18:10.853 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 进入升级加密插件流程，测试执行中...
+2020-11-08 09:18:10.853 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF0005829C3B0000DA14
+2020-11-08 09:18:11.066 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 09:18:11.067 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0005829C3B00005A14
+2020-11-08 09:18:11.117 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2011080918110000FFFFFF092811000AFFFFA014
+2020-11-08 09:28:14.604 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2020-11-08 09:28:14.604 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFF9E7C0000FFFFFF1A0809280369036800000000000000000000000000002093000000000000FFFFFFFFDC14
+2020-11-08 09:28:14.605 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F9E7C0000AA14
+2020-11-08 09:28:14.784 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:151)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-08 09:38:17.443 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2020-11-08 09:38:17.444 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFF97650000FFFFFF1A0809380370036900000000000000000000000000002100000000000000FFFFFFFF4414
+2020-11-08 09:38:17.446 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F976500008C14
+2020-11-08 09:38:17.527 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 该燃气表设备已经测试过升级加密插件，收到重复测试
+2020-11-08 09:38:17.683 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F8134372E3130332E34352E313135000000000000000000000000000000000000001F9997650000FFFFFFFFFFFFFFFF6114
+2020-11-08 09:38:17.683 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 已发送切换正式服务器命令
+2020-11-08 09:38:18.740 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 5
+2020-11-08 09:38:18.740 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF00378134372E3130332E34352E313135000000000000000000000000000000000000001F99DA0000000000000097650000FFFFFFFFFFFFFFFFC314
+2020-11-08 09:38:18.812 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 该燃气表设备已经测试过升级加密插件，收到重复测试
+2020-11-08 09:38:18.812 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换燃气正式服务器: 成功
+2020-11-08 10:25:01.701 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 24584 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 10:25:01.723 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 10:25:05.476 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 4.992 seconds (JVM running for 9.318)
+2020-11-08 10:25:05.697 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 10:27:11.375 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 10:27:11.376 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068010FFFFFF000580AF4700000714
+2020-11-08 10:27:11.408 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 10:27:13.062 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 10:27:13.179 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF000580AF4700007714
+2020-11-08 10:28:03.262 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 10:28:03.263 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068010FFFFFF003D5108656020400349172303012011FFFFFFFFFFFF5F600000FFFFFF1B0810280373036800000000000000000000000000002137000000000000FFFFFFFF4814
+2020-11-08 10:28:03.335 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF0005825F600000C214
+2020-11-08 10:28:03.336 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F5F6000004F14
+2020-11-08 10:28:03.562 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2020-11-08 10:28:03.563 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068090FFFFFF0005825F6000005214
+2020-11-08 10:28:03.630 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2011081028030000FFFFFF103803000AFFFFB214
+2020-11-08 10:29:52.621 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2020-11-08 10:29:52.621 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012011FFFFFFFFFFFF80450000FFFFFF1B0810290370036800000000000000000000000000002137000000000000FFFFFFFF3C14
+2020-11-08 10:29:53.020 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F8134372E3130332E34352E313135000000000000000000000000000000000000001F9980450000FFFFFFFFFFFFFFFF2A14
+2020-11-08 10:29:53.021 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F804500005514
+2020-11-08 10:29:53.925 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 5
+2020-11-08 10:29:53.926 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF00378134372E3130332E34352E313135000000000000000000000000000000000000001F99DA0000000000000080450000FFFFFFFFFFFFFFFF8C14
+2020-11-08 10:29:54.002 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 收到非测试计划中的燃气表上报数据或者燃气表已经抽测试结束
+2020-11-08 10:29:54.002 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 已切换燃气正式服务器: 成功
+2020-11-08 10:29:54.003 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2011081029540000FFFFFF103954000AFFFF5614
+2020-11-08 10:31:37.534 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 9668 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 10:31:37.549 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 10:31:39.492 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 3.125 seconds (JVM running for 5.696)
+2020-11-08 10:31:39.584 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 10:42:06.725 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 10:42:06.726 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF003D802454022C01000000246800000764A723216A11EBA8AE5254005AD21F00293FE5C8164E9EBBCFF2DDD7B187FAE3C6B055D2C9E90013A81EA4E6343FA6B614
+2020-11-08 10:42:08.123 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF003D80EB4E0000B614
+2020-11-08 10:42:08.150 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 10:42:08.827 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 10:42:08.916 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 收到非测试计划中的燃气表上报数据或者燃气表已经抽测试结束
+2020-11-08 10:42:08.927 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2011081042080000FFFFFF105208000AFFFFF014
+2020-11-08 10:42:09.317 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF003D80303A7BA46F246106C8D1EC26CA226F05B614
+2020-11-08 10:42:09.318 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF001180303A7BA46F246106C8D1EC26CA226F053B14
+2020-11-08 10:47:19.945 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 13744 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 10:47:19.952 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 10:47:22.014 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.974 seconds (JVM running for 5.47)
+2020-11-08 10:47:22.102 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 10:47:44.002 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 10:47:44.002 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF000580A2250000C814
+2020-11-08 10:47:44.032 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 10:47:45.551 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 10:47:45.685 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 收到非测试计划中的燃气表上报数据或者燃气表已经抽测试结束
+2020-11-08 10:47:45.686 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF000580A22500004814
+2020-11-08 10:48:47.997 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 10:48:47.997 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF006D512454022C01000000246800000764A723216A11EBA8AE5254005AD21FF58BD6398A12DD701F6BFA8BE279262B066E3AF6934318AE683B8C7CB68787086C699E787B850B8A71A592D38AE05B096781DEFE77593BB19DB0DBCA40C6BE43A47BD6D68B8CD8200715006C2D3601D65814
+2020-11-08 10:48:48.563 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF006D5108656020400349172303012011FFFFFFFFFFFFCE2A0000FFFFFF1B0810480370036900000000000000000000000000002150000000000000FFFFFFFF5814
+2020-11-08 10:48:48.642 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 收到非测试计划中的燃气表上报数据或者燃气表已经抽测试结束
+2020-11-08 10:48:48.707 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F8134372E3130332E34352E313135000000000000000000000000000000000000001F99CE2A0000FFFFFFFFFFFFFFFF5D14
+2020-11-08 10:48:48.708 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 已发送切换正式服务器命令
+2020-11-08 10:48:49.128 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF006D8F01CA7B78B3940DD21D92D8F4F90FF93C5814
+2020-11-08 10:48:49.129 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF00118F01CA7B78B3940DD21D92D8F4F90FF93C5814
+2020-11-08 10:48:50.593 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2020-11-08 10:48:50.594 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 1503033519900680A0FFFFFF006D812454022C01000000246800000764A723216A11EBA8AE5254005AD21FBC47C294CD7EB01BEDCF9B554A69873E7F16AD5A7A064C66437D4CB9D2DED77FD405CB01163711EF7F64A4C332469A06BB4A548C9973DD1AA14A48FE89161A1C8C197DF439F4C361806079C5186530866614
+2020-11-08 10:48:51.010 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 1503033519900680A0FFFFFF006D8134372E3130332E34352E313135000000000000000000000000000000000000001F99DA00000000000000CE2A0000FFFFFFFFFFFFFFFF6614
+2020-11-08 10:48:51.081 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 收到非测试计划中的燃气表上报数据或者燃气表已经抽测试结束
+2020-11-08 10:48:51.081 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 已切换燃气正式服务器: 成功
+2020-11-08 10:54:26.535 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 6388 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 10:54:26.541 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 10:54:28.567 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.987 seconds (JVM running for 5.895)
+2020-11-08 10:54:28.665 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 11:05:02.038 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 11:05:02.039 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF003D802454022C01000000246800000764A723216A11EBA8AE5254005AD21F397080828B516D563246E5A15AAA08C1332370DF1B5686FE9A72AFFDCD4C54E44714
+2020-11-08 11:05:03.394 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF003D80463E00004714
+2020-11-08 11:05:03.420 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 11:05:04.098 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 11:05:04.642 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF003D8018BC8E80842A154F4A661F30B00CD0E54714
+2020-11-08 11:05:04.643 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF00118018BC8E80842A154F4A661F30B00CD0E51114
+2020-11-08 11:06:16.303 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 11:06:16.304 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF006D512454022C01000000246800000764A723216A11EBA8AE5254005AD21FF1CC83A8E5D902CFE6CB270B6448273F1BD650893D9F2E6292F4057A6BFEE62CF3619E02DF28E65EC9EF3C912BA84F9AF1F4E10583D1652380E1E5B2FF9B8C015F41509B8555D6F2804E9E77170AC3D2BE14
+2020-11-08 11:06:16.705 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF006D5108656020400349172303012011FFFFFFFFFFFF562B0000FFFFFF1A0811060370036800000000000000000000000000002162000000000000FFFFFFFFBE14
+2020-11-08 11:06:16.783 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 非抽测燃气表，发送切换到正式服务器命令。
+2020-11-08 11:06:16.842 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F8134372E3130332E34352E313135000000000000000000000000000000000000001F99562B0000FFFFFFFFFFFFFFFFE614
+2020-11-08 11:06:17.226 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF006D8F348F224027484FF5D245700B701D8B88BE14
+2020-11-08 11:06:17.227 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF00118F348F224027484FF5D245700B701D8B88C614
+2020-11-08 11:06:18.843 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2020-11-08 11:06:18.844 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 1503033519900680A0FFFFFF006D812454022C01000000246800000764A723216A11EBA8AE5254005AD21F7415E5656ED63E0D7C75F2CDB2ECDB693DD693C79931B69BF2B14EE2D03DADDE8B548EE2D05B4490185D1A94035139D371CF26227D946B1A473E3C78C100FE3CBD5DF43A5D32EC96A62B5503D8387AAD0314
+2020-11-08 11:06:19.248 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 1503033519900680A0FFFFFF006D8134372E3130332E34352E313135000000000000000000000000000000000000001F99DA00000000000000562B0000FFFFFFFFFFFFFFFF0314
+2020-11-08 11:06:19.317 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换燃气正式服务器命令执行: 成功
+2020-11-08 11:23:16.204 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 24704 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 11:23:16.214 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 11:23:17.973 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.597 seconds (JVM running for 5.228)
+2020-11-08 11:23:18.087 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 11:25:07.791 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 11:25:07.791 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF003D802454022C01000000246800000764A723216A11EBA8AE5254005AD21F96963A580C9FB996F39D7A28A8A6ACC14B789FE6FC551B91F03990738AB13CDAF614
+2020-11-08 11:25:09.247 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF003D8022420000F614
+2020-11-08 11:25:09.269 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 11:25:10.006 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 11:25:10.494 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF003D807142AA37F2C4C69369AC3206F56FADC3F614
+2020-11-08 11:25:10.496 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF0011807142AA37F2C4C69369AC3206F56FADC37114
+2020-11-08 11:32:20.508 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 23800 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 11:32:20.517 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 11:32:22.295 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.579 seconds (JVM running for 5.268)
+2020-11-08 11:32:22.414 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 11:32:43.496 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 11:32:43.496 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF006D512454022C01000000246800000764A723216A11EBA8AE5254005AD21F964E3F54B34C9CD58E587808624B617150CEA243E6054418539894BF21F0167DDDDC1EBB954113B422F0F0074DEABEADA4E93051B12B6DD14A135FDAA402A8FA6199E11E5E94610B25944623DFD7ED43C714
+2020-11-08 11:32:44.890 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF006D5108656020400349172303012011FFFFFFFFFFFFBC210000FFFFFF1B0811320373036700000000000000000000000000002168000000000000FFFFFFFFC714
+2020-11-08 11:32:44.929 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 11:32:45.691 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 11:32:45.795 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000582BC210000E014
+2020-11-08 11:32:46.188 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF006D8F7FC905A6A9B99717F87F2F190B5BC6E8C714
+2020-11-08 11:32:46.189 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF00118F7FC905A6A9B99717F87F2F190B5BC6E89214
+2020-11-08 11:32:46.364 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 11:32:46.365 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 1503033519900680A0FFFFFF003D822454022C01000000246800000764A723216A11EBA8AE5254005AD21F122D05A537F8AAEAC22F63B8712355790DF0BEFAA4FDDB07D0D1ED044117E290BF14
+2020-11-08 11:32:46.768 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, Maybe some data fields have errors
+com.simit.netty.entity.exception.DecryptionException: com.simit.netty.entity.exception.DecryptionException: 解密失败
+	at com.simit.netty.util.Decryption.decrypt(Decryption.java:43)
+	at com.simit.netty.encode.Decoder.decode(Decoder.java:70)
+	at com.simit.netty.encode.Decoder.decode(Decoder.java:25)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.simit.netty.entity.exception.DecryptionException: 解密失败
+	at com.simit.netty.util.Decryption.decrypt(Decryption.java:36)
+	... 19 common frames omitted
+2020-11-08 11:32:46.770 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, added String Object with ""
+java.lang.NullPointerException: element
+	at io.netty.util.internal.ObjectUtil.checkNotNull(ObjectUtil.java:33)
+	at io.netty.handler.codec.CodecOutputList.add(CodecOutputList.java:120)
+	at com.simit.netty.encode.Decoder.decode(Decoder.java:82)
+	at com.simit.netty.encode.Decoder.decode(Decoder.java:25)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-08 11:35:11.900 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 20208 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 11:35:11.907 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 11:35:13.593 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.476 seconds (JVM running for 4.944)
+2020-11-08 11:35:13.690 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 11:35:31.297 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 11:35:31.297 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF006D512454022C010000002468000011B08D2C217311EBA8AE5254005AD21F07A90C620A80E43269DD31E1A8D5C52751BB4B7831135528B1C250E2E0E5D71CD909C3BD7178ADE7C530D87C96B75A157FBA97AF2B6651F96D96FCA1F3E4C1D7A43D5D2FE4DD95E6E385C647C54201F3B014
+2020-11-08 11:35:32.700 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF006D5108656020400349172303012011FFFFFFFFFFFF371C0000FFFFFF1C0811350370036800000000000000000000000000002168000000000000FFFFFFFFB014
+2020-11-08 11:35:33.084 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF006D8F66AC94BED369471C31BF62457ECC4411B014
+2020-11-08 11:35:33.085 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF00118F66AC94BED369471C31BF62457ECC4411F514
+2020-11-08 11:35:33.119 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 11:35:33.790 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 11:35:33.875 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000582371C00005614
+2020-11-08 11:35:34.279 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 11:35:34.280 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 1503033519900680A0FFFFFF003D822454022C010000002468000011B08D2C217311EBA8AE5254005AD21F37D2AF50E3DA2B87D2139E0387EAC8A1DAEC9FC17B501A0C90C882643EEBDCE67614
+2020-11-08 11:35:34.693 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, Maybe some data fields have errors
+com.simit.netty.entity.exception.DecryptionException: com.simit.netty.entity.exception.DecryptionException: 解密失败
+	at com.simit.netty.util.Decryption.decrypt(Decryption.java:43)
+	at com.simit.netty.encode.Decoder.decode(Decoder.java:70)
+	at com.simit.netty.encode.Decoder.decode(Decoder.java:25)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.simit.netty.entity.exception.DecryptionException: 解密失败
+	at com.simit.netty.util.Decryption.decrypt(Decryption.java:36)
+	... 19 common frames omitted
+2020-11-08 11:35:34.694 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, added String Object with ""
+java.lang.NullPointerException: element
+	at io.netty.util.internal.ObjectUtil.checkNotNull(ObjectUtil.java:33)
+	at io.netty.handler.codec.CodecOutputList.add(CodecOutputList.java:120)
+	at com.simit.netty.encode.Decoder.decode(Decoder.java:82)
+	at com.simit.netty.encode.Decoder.decode(Decoder.java:25)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-08 11:50:31.620 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2020-11-08 11:50:31.620 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF006D512454022C010000002468000075C71A6D217311EBA8AE5254005AD21FE51D75F60B0716A6AC44E29CADA4F7B2861B83CFEFEC189FA0259869E773402A995E00825D0F6B69A13518F22D28D71A6A8A12BF9D4C270355B72B337FA0BD3E90A30D191E8A1D6D2950996A3F848B68D114
+2020-11-08 11:50:32.063 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF006D5108656020400349172303012011FFFFFFFFFFFF87450000FFFFFF1B0811500370036800000000000000000000000000002175000000000000FFFFFFFFD114
+2020-11-08 11:50:32.459 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF006D8F494EFDFF99E74CB881182DBA0BB51D8AD114
+2020-11-08 11:50:32.460 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF00118F494EFDFF99E74CB881182DBA0BB51D8ABA14
+2020-11-08 11:50:32.722 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F8134372E3130332E34352E313135000000000000000000000000000000000000001F9987450000FFFFFFFFFFFFFFFF3114
+2020-11-08 11:50:34.771 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2020-11-08 11:50:34.772 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 1503033519900680A0FFFFFF006D812454022C010000002468000075C71A6D217311EBA8AE5254005AD21F64163D891715AC1801BC8E6A4F5E7A962241D7A75ED39D69CAD37C77AEAB5E5FD5E09674926E9E4605686C8C00A8DC4E6DB838796455F624919733ED19D50C30B490CF33E6CEBDE43B0D424FDB05258C3114
+2020-11-08 11:50:35.202 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 1503033519900680A0FFFFFF006D8134372E3130332E34352E313135000000000000000000000000000000000000001F99DA0000000000000087450000FFFFFFFFFFFFFFFF3114
+2020-11-08 11:50:35.275 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换燃气正式服务器命令执行: 成功
+2020-11-08 20:44:39.683 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 20284 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-08 20:44:39.692 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-08 20:44:41.413 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.481 seconds (JVM running for 4.9)
+2020-11-08 20:44:41.506 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-08 20:46:42.831 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-08 20:46:42.832 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF003D802454022C010000002468000075C71A6D217311EBA8AE5254005AD21F6EC234A512B1D9005513C0A614292C1D1EB88A84E983C149E4CC7CC79E4FBC617614
+2020-11-08 20:46:44.195 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF003D80733500007614
+2020-11-08 20:46:44.609 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF003D80878F0C1755CB92CF2DC793DA562C87D07614
+2020-11-08 20:46:44.611 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF001180878F0C1755CB92CF2DC793DA562C87D0A114
+2020-11-08 20:46:44.663 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-08 20:46:45.363 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-08 20:47:11.018 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2020-11-08 20:47:11.018 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303357777777720FFFFFF003D802454022C010000002468000074DC10CD1F3011EBA8AE5254005AD21F1DE4BB1419D2C07ECEF53D173E4A718A4FDEE9CC1B211AF92BF8B9E3FF713B183E14
+2020-11-08 20:47:11.439 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303357777777720FFFFFF003D80904900003E14
+2020-11-08 20:47:11.833 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033577777777A0FFFFFF003D8092F89DC3810DC26C2C1CBDEEC5CB26F93E14
+2020-11-08 20:47:11.833 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033577777777A0FFFFFF00118092F89DC3810DC26C2C1CBDEEC5CB26F9A214
+2020-11-08 20:48:02.212 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2020-11-08 20:48:02.212 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068020FFFFFF006D512454022C010000002468000075C71A6D217311EBA8AE5254005AD21F926CBAD949D9C8AD6FEF8A752300789F02A3EE448D7B0306D572C907AC123D6C55D0FCECD780D5DE7A3C467F292A58F3EE75D56D4D261D3F3A7FF21F615F2FA19FBD9DAD41BFDABB7FB62CA9097A8317AC14
+2020-11-08 20:48:02.655 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303351990068020FFFFFF006D5108656020400349172303012011FFFFFFFFFFFFB2570000FFFFFF1B0820480369036200000000000000000000000000002075000000000000FFFFFFFFAC14
+2020-11-08 20:48:03.029 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033519900680A0FFFFFF006D8F00AE3F828B1969CF8405E3F8275A0921AC14
+2020-11-08 20:48:03.030 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033519900680A0FFFFFF00118F00AE3F828B1969CF8405E3F8275A09211614
+2020-11-08 20:48:03.723 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 150303351990068020FFFFFF006D81ACC749B9C062CA08B9317D4BD4533396F970C1E027CA029CEEA2BADB42554BE0D158B7FD51DBDF4A027C8D3941B68EC2D158B7FD51DBDF4A027C8D3941B68EC29BAC2E9F943B6305FE19AA6802B7BEBC80B327B6096D719F6DAF98115933274EAC14
+2020-11-08 20:48:03.723 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068020FFFFFF006181ACC749B9C062CA08B9317D4BD4533396F970C1E027CA029CEEA2BADB42554BE0D158B7FD51DBDF4A027C8D3941B68EC2D158B7FD51DBDF4A027C8D3941B68EC29BAC2E9F943B6305FE19AA6802B7BEBC80B327B6096D719F6DAF98115933274E8614
+2020-11-08 20:48:05.362 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2020-11-08 20:48:05.362 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 1503033519900680A0FFFFFF006D812454022C010000002468000075C71A6D217311EBA8AE5254005AD21F677D18049C116E4B02B67940EF8BCB945BF1E8C35709E95C7572ECCE6592BD58BE4F8BDB838943366E07AA0539E96AE1E7FC6CFFDAB8A93847607358D81EC983968D6B68B2B7B5898BB28E06CA8672BDBB14
+2020-11-08 20:48:05.769 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 1503033519900680A0FFFFFF006D8134372E3130332E34352E313135000000000000000000000000000000000000001F99DA00000000000000B2570000FFFFFFFFFFFFFFFFBB14
+2020-11-08 20:48:05.842 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换燃气正式服务器命令执行: 成功
+2020-11-08 20:48:16.949 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 5
+2020-11-08 20:48:16.949 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303357777777720FFFFFF006D512454022C010000002468000074DC10CD1F3011EBA8AE5254005AD21F842774764ABA8377771AA6A29B5BAA4DFAE96D834530587CCBFD6621E7274314F0FBDC646A259FE192BC329425BB9E3F75D0D0628D5C4A3F7DA85EDCDD400226072E9C1F4F4D349B261ABE5FFED38B845214
+2020-11-08 20:48:17.376 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303357777777720FFFFFF006D5108656020403575732305012011FFFFFFFFFFFF021C0000FFFFFF09082048022103205A480000002000000020000000000000FFFFFFFF0000FFFFFFFF5214
+2020-11-08 20:48:17.786 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033577777777A0FFFFFF006D8F56AC9AB8D57E010A9F0E89E7AE2BED4D5214
+2020-11-08 20:48:17.786 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033577777777A0FFFFFF00118F56AC9AB8D57E010A9F0E89E7AE2BED4D4B14
+2020-11-08 20:48:18.428 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 150303357777777720FFFFFF006D817DE0001A1862717E231EF97A5245AF346B3DF149F8487D535CBCF4260AE810629D0ECE4168BACFC914FC904DFA9A90BD9D0ECE4168BACFC914FC904DFA9A90BDA7C27EBB235F96E104D17E973D9AD83359F6BAEEC934D1796DACDFE1903D70FC5214
+2020-11-08 20:48:18.429 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303357777777720FFFFFF0061817DE0001A1862717E231EF97A5245AF346B3DF149F8487D535CBCF4260AE810629D0ECE4168BACFC914FC904DFA9A90BD9D0ECE4168BACFC914FC904DFA9A90BDA7C27EBB235F96E104D17E973D9AD83359F6BAEEC934D1796DACDFE1903D70FCFC14
+2020-11-08 20:48:20.078 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 6
+2020-11-08 20:48:20.079 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 1503033577777777A0FFFFFF006D812454022C010000002468000074DC10CD1F3011EBA8AE5254005AD21FC7FEED31DA7B5CC1BF3E5ABD21EAC3F6D3BCCFD23AE93A5D026AB6FB9ECFB19E69A4FA711DE1F5C7C349B655D06848D9084662CEECF104780331E647267509D4D94B147938409AD26C6D65A8A02A73F79A14
+2020-11-08 20:48:20.526 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 1503033577777777A0FFFFFF006D8134372E3130332E34352E313135000000000000000000000000000000000000001F99DA020202DA040404021C0000FFFFFFFFFFFFFFFF9A14
+2020-11-08 20:48:20.599 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换燃气正式服务器命令执行: 成功

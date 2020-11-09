@@ -1,0 +1,289 @@
+2020-11-04 16:44:38.516 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 12824 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 16:44:38.524 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 16:44:40.353 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.89 seconds (JVM running for 6.697)
+2020-11-04 16:44:40.464 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 19:33:27.364 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 3428 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:33:27.372 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:33:29.608 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 3.19 seconds (JVM running for 10.647)
+2020-11-04 19:33:29.768 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 19:33:44.596 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 19:33:45.391 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990138420FFFFFF006D512454022C01000000246800006AB7780DF7B811E9871D5254005AD21F4B4FC45614E604F7178FFA5FF4C219A1C45E4B90C7C09A14197F57DD9C6EE78CEA5178AC7DD80D7640F16D0F3E08F85D5E8281CC134C8E3CB0692AC55FA4C6B6079614ADDD29102ED1516D1461ED38C40014
+2020-11-04 19:35:08.595 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, Maybe some data fields have errors
+2020-11-04 19:35:08.596 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, added String Object with ""
+2020-11-04 19:35:38.249 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 16324 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:35:38.262 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:35:40.188 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.965 seconds (JVM running for 6.117)
+2020-11-04 19:35:40.328 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 19:35:45.962 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 19:35:46.262 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990138420FFFFFF006D512454022C01000000246800006AB7780DF7B811E9871D5254005AD21F4B4FC45614E604F7178FFA5FF4C219A1C45E4B90C7C09A14197F57DD9C6EE78CEA5178AC7DD80D7640F16D0F3E08F85D5E8281CC134C8E3CB0692AC55FA4C6B6079614ADDD29102ED1516D1461ED38C40014
+2020-11-04 19:37:12.290 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, Maybe some data fields have errors
+2020-11-04 19:37:12.291 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, added String Object with ""
+2020-11-04 19:41:02.143 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 15704 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:41:02.157 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:41:04.291 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 3.329 seconds (JVM running for 6.481)
+2020-11-04 19:41:04.421 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 19:41:08.104 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 19:41:08.105 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990138420FFFFFF006D512454022C01000000246800006AB7780DF7B811E9871D5254005AD21F4B4FC45614E604F7178FFA5FF4C219A1C45E4B90C7C09A14197F57DD9C6EE78CEA5178AC7DD80D7640F16D0F3E08F85D5E8281CC134C8E3CB0692AC55FA4C6B6079614ADDD29102ED1516D1461ED38C40014
+2020-11-04 19:42:25.696 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, Maybe some data fields have errors
+2020-11-04 19:42:25.697 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, added String Object with ""
+2020-11-04 19:42:35.285 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 18704 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:42:35.295 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:42:37.105 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.83 seconds (JVM running for 5.905)
+2020-11-04 19:42:37.218 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 19:42:39.507 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 19:42:39.508 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990138420FFFFFF006D512454022C01000000246800006AB7780DF7B811E9871D5254005AD21F4B4FC45614E604F7178FFA5FF4C219A1C45E4B90C7C09A14197F57DD9C6EE78CEA5178AC7DD80D7640F16D0F3E08F85D5E8281CC134C8E3CB0692AC55FA4C6B6079614ADDD29102ED1516D1461ED38C40014
+2020-11-04 19:43:18.286 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, Maybe some data fields have errors
+2020-11-04 19:43:18.287 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, added String Object with ""
+2020-11-04 19:43:28.816 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 76 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:43:28.828 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:43:30.926 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 3.318 seconds (JVM running for 7.151)
+2020-11-04 19:43:31.040 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 19:43:32.564 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 19:43:32.564 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990138420FFFFFF006D512454022C01000000246800006AB7780DF7B811E9871D5254005AD21F4B4FC45614E604F7178FFA5FF4C219A1C45E4B90C7C09A14197F57DD9C6EE78CEA5178AC7DD80D7640F16D0F3E08F85D5E8281CC134C8E3CB0692AC55FA4C6B6079614ADDD29102ED1516D1461ED38C40014
+2020-11-04 19:44:33.172 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, Maybe some data fields have errors
+2020-11-04 19:44:33.172 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, added String Object with ""
+2020-11-04 19:45:11.739 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 13788 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:45:11.748 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:45:14.082 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String com.simit.netty.util.Decryption.decryptUrl
+2020-11-04 19:45:14.083 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String com.simit.netty.util.Decryption.encryptUrl
+2020-11-04 19:45:14.240 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 3.653 seconds (JVM running for 6.906)
+2020-11-04 19:45:14.362 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 19:49:59.530 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 16212 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:49:59.544 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:50:01.142 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'response' defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'response': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2020-11-04 19:50:01.161 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-04 19:50:01.166 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  response defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]
+└─────┘
+
+
+2020-11-04 19:53:17.869 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 14784 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:53:17.877 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:53:19.742 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'response' defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'response': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2020-11-04 19:53:19.757 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-04 19:53:19.763 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  response defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]
+└─────┘
+
+
+2020-11-04 19:54:23.205 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 16264 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:54:23.218 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:54:25.086 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.961 seconds (JVM running for 6.471)
+2020-11-04 19:54:25.241 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 19:54:29.208 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 19:54:29.208 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990138420FFFFFF006D512454022C01000000246800006AB7780DF7B811E9871D5254005AD21F4B4FC45614E604F7178FFA5FF4C219A1C45E4B90C7C09A14197F57DD9C6EE78CEA5178AC7DD80D7640F16D0F3E08F85D5E8281CC134C8E3CB0692AC55FA4C6B6079614ADDD29102ED1516D1461ED38C40014
+2020-11-04 19:55:07.491 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, Maybe some data fields have errors
+2020-11-04 19:55:07.492 [nioEventLoopGroup-2-1] WARN  com.simit.netty.encode.Decoder - Decoding datagram failure, added String Object with ""
+2020-11-04 19:59:06.464 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 11280 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 19:59:06.470 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 19:59:08.114 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'response' defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'response': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2020-11-04 19:59:08.128 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-04 19:59:08.132 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  response defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]
+└─────┘
+
+
+2020-11-04 20:04:37.422 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 4292 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 20:04:37.430 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 20:04:39.156 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.612 seconds (JVM running for 4.975)
+2020-11-04 20:04:39.242 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 20:05:56.093 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 20:05:56.093 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303357777777720FFFFFF003D802454022C0100000024680000F5D313A21D7311EBA8AE5254005AD21FFD73333D0675C4BA12B47F72398C8A8722C6FD9F72681FC8D6249CBC015E7EBA1D14
+2020-11-04 20:05:57.538 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303357777777720FFFFFF003D800A1C00001D14
+2020-11-04 20:05:57.549 [nioEventLoopGroup-2-1] WARN  c.s.netty.entity.datagram.Response - 加密失败，发送明文应答
+com.simit.netty.entity.exception.DecryptionException: java.net.MalformedURLException
+	at com.simit.netty.util.Decryption.encrypt(Decryption.java:60)
+	at com.simit.netty.entity.datagram.Response.getNewNetworkParamResponse(Response.java:84)
+	at com.simit.netty.handler.ServerHandler.channelRead(ServerHandler.java:72)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.MalformedURLException: null
+	at java.net.URL.<init>(URL.java:644)
+	at java.net.URL.<init>(URL.java:507)
+	at java.net.URL.<init>(URL.java:456)
+	at com.simit.netty.util.Decryption.req(Decryption.java:76)
+	at com.simit.netty.util.Decryption.encrypt(Decryption.java:52)
+	... 22 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.net.URL.<init>(URL.java:549)
+	... 26 common frames omitted
+2020-11-04 20:05:57.549 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033577777777A0FFFFFF0005800A1C00007414
+2020-11-04 20:05:57.575 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-04 20:05:58.262 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-04 20:08:01.935 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 18348 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 20:08:01.954 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 20:08:03.969 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 3.283 seconds (JVM running for 6.801)
+2020-11-04 20:08:04.088 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 20:11:33.976 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 20:11:33.976 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303357777777720FFFFFF003D802454022C0100000024680000F5D313A21D7311EBA8AE5254005AD21FA965181E0215485208B0852EBE47245EBA03BA5AC270E67B484966EB8EA8697ACF14
+2020-11-04 20:16:31.199 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 15380 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 20:16:31.206 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 20:16:32.787 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'response' defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'response': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2020-11-04 20:16:32.800 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-04 20:16:32.804 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  response defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]
+└─────┘
+
+
+2020-11-04 20:22:23.951 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 13580 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 20:22:23.961 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 20:22:25.512 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'response' defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'response': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2020-11-04 20:22:25.526 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-04 20:22:25.529 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  response defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]
+└─────┘
+
+
+2020-11-04 20:29:11.974 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 11868 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 20:29:11.986 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 20:29:13.601 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'response' defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.simit.netty.entity.datagram.Response]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2020-11-04 20:29:13.615 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-04 20:29:13.638 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'response' defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.simit.netty.entity.datagram.Response]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:313)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:294)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.simit.NBTestServerApplication.main(NBTestServerApplication.java:22)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.simit.netty.entity.datagram.Response]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:309)
+	... 19 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.simit.netty.entity.datagram.Response.<init>(Response.java:19)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 21 common frames omitted
+2020-11-04 20:57:34.545 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 8692 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 20:57:34.551 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 20:57:36.235 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'response' defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'response': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2020-11-04 20:57:36.248 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-04 20:57:36.251 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  response defined in file [C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes\com\simit\netty\entity\datagram\Response.class]
+└─────┘
+
+
+2020-11-04 20:58:33.731 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 18704 (C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\WXZX\表厂线下\加密插件抽测\nb-test-server)
+2020-11-04 20:58:33.740 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2020-11-04 20:58:36.564 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 4.022 seconds (JVM running for 8.377)
+2020-11-04 20:58:36.747 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8088
+2020-11-04 20:59:42.289 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2020-11-04 20:59:42.289 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303357777777720FFFFFF003D802454022C0100000024680000F5D313A21D7311EBA8AE5254005AD21FF9A00ACAA1F887A7524D6AFBCD85C16BEDDA10140EDF2D958A0F1E0A601230E42014
+2020-11-04 20:59:43.849 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 解密后数据: 150303357777777720FFFFFF003D804C7E00002014
+2020-11-04 21:00:06.477 [nioEventLoopGroup-2-1] INFO  com.simit.netty.util.Decryption - 加密后数据: 1503033577777777A0FFFFFF003D80E05AE2AF397369131D90102CE73FD2812014
+2020-11-04 21:00:06.478 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 1503033577777777A0FFFFFF001180E05AE2AF397369131D90102CE73FD281AF14
+2020-11-04 21:00:06.524 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-04 21:00:07.404 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-04 21:01:38.811 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-11-04 21:01:38.828 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
