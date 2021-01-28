@@ -6,7 +6,7 @@ import java.beans.IntrospectionException;
  * @Author: ys xu
  * @Date: 2020/11/2 16:32
  */
-public class BatchSum {
+public class SamplingSum {
 
     private Long id;
     private String batchId;
@@ -16,7 +16,7 @@ public class BatchSum {
     private Integer totalNum;
     private Long ts;
 
-    public BatchSum(Long id, String batchId, Integer samplingFlag, Integer successfulNum, Integer failureNum, Integer totalNum, Long ts) {
+    public SamplingSum(Long id, String batchId, Integer samplingFlag, Integer successfulNum, Integer failureNum, Integer totalNum, Long ts) {
         this.id = id;
         this.batchId = batchId;
         this.samplingFlag = samplingFlag;

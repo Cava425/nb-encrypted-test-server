@@ -1,6 +1,8 @@
 package com.simit.data;
 
-import com.simit.entity.AutoResult;
+import com.simit.entity.Result;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -12,7 +14,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -23,36 +24,36 @@ import java.util.Objects;
  */
 
 @Repository
-public class JdbcAutoResultRepository implements AutoResultRepository {
+public class JdbcResultRepository implements ResultRepository {
 
-    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final Logger logger = LoggerFactory.getLogger(JdbcResultRepository.class);
 
     private JdbcTemplate jdbc;
 
     @Autowired
-    public JdbcAutoResultRepository(JdbcTemplate jdbc){
+    public JdbcResultRepository(JdbcTemplate jdbc){
         this.jdbc = jdbc;
     }
 
     @Override
-    public List<AutoResult> findAll(String gasId) {
-        String sql = "SELECT id, deviceid, batch_id, origin_data, command_code, command_name, control_code, successful_code, ts FROM t_auto_result_latest WHERE deviceid=?";
+    public List<Result> findAll(String gasId) {
+        String sql = "SELECT id, deviceid, batch_id, sampling_flag, origin_data, command_code, command_name, control_code, successful_code, ts FROM t_sampling_inspection_latest WHERE deviceid=?";
         try{
             return jdbc.queryForObject(sql, this::mapRowToAutoResults, gasId);
         }catch (EmptyResultDataAccessException e){
-
+            logger.warn(e.toString());
         }
 
         return new ArrayList<>();
     }
 
     @Override
-    public List<AutoResult> findAllSuccessful(String gasId) {
-        String sql = "SELECT id, deviceid, batch_id, origin_data, command_code, command_name, control_code, successful_code, ts FROM t_auto_result_latest WHERE deviceid=? AND successful_code=?";
+    public List<Result> findAllSuccessful(String gasId) {
+        String sql = "SELECT id, deviceid, batch_id, sampling_flag, origin_data, command_code, command_name, control_code, successful_code, ts FROM t_sampling_inspection_latest WHERE deviceid=? AND successful_code=?";
         try{
             return jdbc.queryForObject(sql, this::mapRowToAutoResults, gasId, 1);
         }catch (EmptyResultDataAccessException e){
-
+            logger.warn(e.toString());
         }
 
         return new ArrayList<>();
@@ -61,39 +62,41 @@ public class JdbcAutoResultRepository implements AutoResultRepository {
 
 
 
-    private List<AutoResult> mapRowToAutoResults(ResultSet rs, int rowNum) throws SQLException {
-        List<AutoResult> autoResults = new ArrayList<>();
+    private List<Result> mapRowToAutoResults(ResultSet rs, int rowNum) throws SQLException {
+        List<Result> results = new ArrayList<>();
 
         do {
-            autoResults.add(new AutoResult(rs.getLong("id"),
+            results.add(new Result(rs.getLong("id"),
                     rs.getString("deviceid"),
                     rs.getString("batch_id"),
+                    rs.getString("sampling_flag"),
                     rs.getString("origin_data"),
                     rs.getString("command_code"),
                     rs.getString("command_name"),
                     rs.getString("control_code"),
-                    rs.getBoolean("successful_code"),
+                    rs.getString("successful_code"),
                     rs.getLong("ts")));
         }while (rs.next());
 
-        return autoResults;
+        return results;
     }
 
     @Override
-    public AutoResult save(AutoResult result) {
-        String sql = "INSERT INTO t_auto_result_latest (deviceid, batch_id, origin_data, command_code, command_name, control_code, successful_code, ts) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    public Result save(Result result) {
+        String sql = "INSERT into t_sampling_inspection_latest (deviceid, batch_id, sampling_flag, origin_data, command_code, command_name, control_code, successful_code, ts) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         KeyHolder holder = new GeneratedKeyHolder();
         jdbc.update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, result.getGasId());
             ps.setString(2, result.getBatchId());
-            ps.setString(3, result.getOriginData());
-            ps.setString(4, result.getCommandCode());
-            ps.setString(5, result.getCommandName());
-            ps.setString(6, result.getControlCode());
-            ps.setBoolean(7, result.getSuccessfulCode());
-            ps.setLong(8, result.getCreateTime());
+            ps.setString(3, result.getSamplingFlag());
+            ps.setString(4, result.getOriginData());
+            ps.setString(5, result.getCommandCode());
+            ps.setString(6, result.getCommandName());
+            ps.setString(7, result.getControlCode());
+            ps.setString(8, result.getSuccessfulCode());
+            ps.setLong(9, result.getCreateTime());
             return ps;
         }, holder);
 
@@ -103,11 +106,11 @@ public class JdbcAutoResultRepository implements AutoResultRepository {
     }
 
     @Override
-    public int[] delete(List<AutoResult> results) {
-        String sql = "DELETE FROM t_auto_result_latest WHERE deviceid=?";
+    public int[] delete(List<Result> results) {
+        String sql = "DELETE FROM t_sampling_inspection_latest WHERE deviceid=?";
 
         List<Object[]> params = new ArrayList<>();
-        for(AutoResult result : results){
+        for(Result result : results){
             params.add(new Object[]{
                     result.getGasId()
             });
@@ -117,14 +120,15 @@ public class JdbcAutoResultRepository implements AutoResultRepository {
 
 
     @Override
-    public int[] saveToSuccessful(List<AutoResult> results) {
-        String sql = "INSERT INTO t_auto_result_successful (deviceid, batch_id, origin_data, command_code, command_name, control_code, successful_code, ts) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    public int[] saveToSuccessful(List<Result> results) {
+        String sql = "INSERT INTO t_sampling_inspection_success (deviceid, batch_id, sampling_flag, origin_data, command_code, command_name, control_code, successful_code, ts) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         List<Object[]> params = new ArrayList<>();
-        for(AutoResult result : results){
+        for(Result result : results){
             params.add(new Object[]{
-                    result.getId(),
+                    result.getGasId(),
                     result.getBatchId(),
+                    result.getSamplingFlag(),
                     result.getOriginData(),
                     result.getCommandCode(),
                     result.getCommandName(),
@@ -137,14 +141,15 @@ public class JdbcAutoResultRepository implements AutoResultRepository {
     }
 
     @Override
-    public int[] saveToFailed(List<AutoResult> results) {
-        String sql = "INSERT INTO t_auto_result_failed (deviceid, batch_id, origin_data, command_code, command_name, control_code, successful_code, ts) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    public int[] saveToFailed(List<Result> results) {
+        String sql = "INSERT INTO t_sampling_inspection_failed (deviceid, batch_id, sampling_flag, origin_data, command_code, command_name, control_code, successful_code, ts) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         List<Object[]> params = new ArrayList<>();
-        for(AutoResult result : results){
+        for(Result result : results){
             params.add(new Object[]{
                     result.getGasId(),
                     result.getBatchId(),
+                    result.getSamplingFlag(),
                     result.getOriginData(),
                     result.getCommandCode(),
                     result.getCommandName(),

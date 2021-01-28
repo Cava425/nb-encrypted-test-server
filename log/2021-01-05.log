@@ -1,0 +1,874 @@
+2021-01-05 13:18:28.644 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 500 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:18:28.651 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:18:30.304 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.501 seconds (JVM running for 5.339)
+2021-01-05 13:18:30.416 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:20:05.440 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:20:05.440 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFFC1570000FFFFFF160513200367036700000000000000000000000000001362000000000000FFFFFFFF2C14
+2021-01-05 13:20:05.446 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FC1570000A814
+2021-01-05 13:20:05.476 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:20:06.108 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:20:06.345 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT deviceid, batch_id, sampling_flag, is_tested FROM t_batch_record WHERE deviceid=? AND sampling_flg IS NOT NULL AND flag IS NULL LIMIT 1]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'sampling_flg' in 'where clause'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:712)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:790)
+	at com.simit.data.JdbcBatchRecordRepository.find(JdbcBatchRecordRepository.java:35)
+	at com.simit.data.JdbcBatchRecordRepository$$FastClassBySpringCGLIB$$749a1faf.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcBatchRecordRepository$$EnhancerBySpringCGLIB$$5d0fc160.find(<generated>)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:92)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'sampling_flg' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:678)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617)
+	... 36 common frames omitted
+2021-01-05 13:21:01.840 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 20152 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:21:01.846 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:21:03.429 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.378 seconds (JVM running for 4.616)
+2021-01-05 13:21:03.512 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:21:13.263 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:21:13.263 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF6B070000FFFFFF170513210368036800000000000000000000000000001362000000000000FFFFFFFF8A14
+2021-01-05 13:21:13.269 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F6B0700000214
+2021-01-05 13:21:13.291 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:21:13.800 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:21:14.024 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT deviceid, batch_id, sampling_flag, is_tested FROM t_batch_record WHERE deviceid=? AND sampling_flag IS NOT NULL AND flag IS NULL LIMIT 1]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'flag' in 'where clause'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:712)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:790)
+	at com.simit.data.JdbcBatchRecordRepository.find(JdbcBatchRecordRepository.java:35)
+	at com.simit.data.JdbcBatchRecordRepository$$FastClassBySpringCGLIB$$749a1faf.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcBatchRecordRepository$$EnhancerBySpringCGLIB$$6765b6aa.find(<generated>)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:92)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'flag' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:678)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617)
+	... 36 common frames omitted
+2021-01-05 13:21:51.902 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 2760 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:21:51.908 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:21:53.581 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.362 seconds (JVM running for 4.72)
+2021-01-05 13:21:53.664 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:22:05.779 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:22:05.779 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF724D0000FFFFFF170513220367036600000000000000000000000000001362000000000000FFFFFFFFD514
+2021-01-05 13:22:05.785 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F724D00004F14
+2021-01-05 13:22:05.813 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:22:06.329 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:22:06.423 [nioEventLoopGroup-2-1] WARN  c.s.data.JdbcBatchRecordRepository - org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+2021-01-05 13:22:06.423 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:22:06.423 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 发送切换IP命令.
+2021-01-05 13:22:06.463 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5724D0000FFFFFFFFFFFFFFFF2414
+2021-01-05 13:22:07.620 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 13:22:07.620 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA00000000000000724D0000FFFFFFFFFFFFFFFF8614
+2021-01-05 13:22:07.686 [nioEventLoopGroup-2-1] WARN  c.s.data.JdbcBatchRecordRepository - org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+2021-01-05 13:22:07.687 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:22:07.688 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换IP命令结果: 成功
+2021-01-05 13:24:11.864 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2021-01-05 13:24:11.864 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFFE21E0000FFFFFF180513240365036400000000000000000000000000001368000000000000FFFFFFFF1B14
+2021-01-05 13:24:11.866 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FE21E00009014
+2021-01-05 13:24:12.062 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [SELECT deviceid, batch_id, sampling_flag, is_tested FROM t_batch_record WHERE deviceid=? AND sampling_flag IS NOT NULL AND is_tested IS NULL LIMIT 1]; SQL state [S0022]; error code [0]; Column 'sampling_flg' not found.; nested exception is java.sql.SQLException: Column 'sampling_flg' not found.
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:712)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:790)
+	at com.simit.data.JdbcBatchRecordRepository.find(JdbcBatchRecordRepository.java:35)
+	at com.simit.data.JdbcBatchRecordRepository$$FastClassBySpringCGLIB$$749a1faf.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcBatchRecordRepository$$EnhancerBySpringCGLIB$$cad34fe9.find(<generated>)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:92)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Column 'sampling_flg' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:818)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at com.simit.data.JdbcBatchRecordRepository.mapToBatchRecord(JdbcBatchRecordRepository.java:57)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:679)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617)
+	... 36 common frames omitted
+2021-01-05 13:25:44.588 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 7216 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:25:44.602 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:25:46.593 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.73 seconds (JVM running for 5.461)
+2021-01-05 13:25:46.681 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:26:08.082 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 5876 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:26:08.087 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:26:09.808 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.557 seconds (JVM running for 4.853)
+2021-01-05 13:26:09.902 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:26:25.675 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:26:25.676 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF1E400000FFFFFF190513260368036600000000000000000000000000001375000000000000FFFFFFFF8E14
+2021-01-05 13:26:25.681 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F1E400000EE14
+2021-01-05 13:26:25.705 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:26:26.289 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:26:26.380 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:26:26.381 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 发送切换IP命令.
+2021-01-05 13:26:26.424 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D51E400000FFFFFFFFFFFFFFFFC314
+2021-01-05 13:26:27.091 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 13:26:27.092 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA000000000000001E400000FFFFFFFFFFFFFFFF2514
+2021-01-05 13:26:27.168 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:26:27.169 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换IP命令结果: 成功
+2021-01-05 13:28:35.326 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 8416 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:28:35.331 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:28:37.040 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.278 seconds (JVM running for 6.985)
+2021-01-05 13:28:37.173 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:30:17.997 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:30:17.998 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF42640000FFFFFF180513300366036500000000000000000000000000001393000000000000FFFFFFFFFA14
+2021-01-05 13:30:18.004 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F426400003614
+2021-01-05 13:30:37.433 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:30:38.521 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:30:45.767 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:30:45.767 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 发送切换IP命令.
+2021-01-05 13:30:45.861 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D542640000FFFFFFFFFFFFFFFF0B14
+2021-01-05 13:30:45.915 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-01-05 13:30:45.992 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-01-05 13:31:57.657 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 1568 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:31:57.664 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:31:59.376 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.685 seconds (JVM running for 5.725)
+2021-01-05 13:31:59.490 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:32:10.539 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:32:10.539 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF75470000FFFFFF180513320367036600000000000000000000000000001400000000000000FFFFFFFF8214
+2021-01-05 13:32:10.545 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F754700004C14
+2021-01-05 13:32:16.943 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:32:18.002 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:32:21.561 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:32:21.562 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 发送切换IP命令.
+2021-01-05 13:32:21.624 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-01-05 13:32:21.662 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D575470000FFFFFFFFFFFFFFFF2114
+2021-01-05 13:32:21.678 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:612)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:712)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:790)
+	at com.simit.data.JdbcAutoResultRepository.findAll(JdbcAutoResultRepository.java:38)
+	at com.simit.data.JdbcAutoResultRepository$$FastClassBySpringCGLIB$$291679fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcAutoResultRepository$$EnhancerBySpringCGLIB$$af6f6be3.findAll(<generated>)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:220)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	... 37 common frames omitted
+2021-01-05 13:32:21.740 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-01-05 13:33:48.431 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 14592 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:33:48.439 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:33:50.090 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.606 seconds (JVM running for 5.511)
+2021-01-05 13:33:50.204 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:35:39.580 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 15880 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:35:39.588 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:35:41.177 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.498 seconds (JVM running for 5.343)
+2021-01-05 13:35:41.298 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:38:10.301 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:38:10.301 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFFFB210000FFFFFF190513380367036600000000000000000000000000001431000000000000FFFFFFFF1A14
+2021-01-05 13:38:10.308 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FFB210000AC14
+2021-01-05 13:38:10.339 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:38:10.913 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:38:11.025 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:38:11.025 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 发送切换IP命令.
+2021-01-05 13:38:11.072 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5FB210000FFFFFFFFFFFFFFFF8114
+2021-01-05 13:38:49.177 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 13:38:49.178 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA00000000000000FB210000FFFFFFFFFFFFFFFFE314
+2021-01-05 13:38:49.246 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-01-05 13:38:49.256 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:38:49.256 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换IP命令结果: 成功
+2021-01-05 13:38:49.269 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:612)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:712)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:790)
+	at com.simit.data.JdbcAutoResultRepository.findAll(JdbcAutoResultRepository.java:38)
+	at com.simit.data.JdbcAutoResultRepository$$FastClassBySpringCGLIB$$291679fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcAutoResultRepository$$EnhancerBySpringCGLIB$$e6bfd249.findAll(<generated>)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:220)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	... 37 common frames omitted
+2021-01-05 13:38:49.290 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-01-05 13:39:34.655 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 12988 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:39:34.663 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:39:36.363 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.558 seconds (JVM running for 5.608)
+2021-01-05 13:39:36.516 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:41:39.489 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:41:39.490 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFFC8260000FFFFFF1A0513410366036600000000000000000000000000001450000000000000FFFFFFFF1414
+2021-01-05 13:41:39.496 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FC82600007E14
+2021-01-05 13:41:39.528 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:41:40.121 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:42:31.482 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s259ms882µs100ns).
+2021-01-05 13:42:31.482 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 13:42:31.483 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 发送切换IP命令.
+2021-01-05 13:42:31.575 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5C8260000FFFFFFFFFFFFFFFF5314
+2021-01-05 13:42:31.574 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-01-05 13:42:31.596 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:612)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:712)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:790)
+	at com.simit.data.JdbcAutoResultRepository.findAll(JdbcAutoResultRepository.java:38)
+	at com.simit.data.JdbcAutoResultRepository$$FastClassBySpringCGLIB$$291679fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcAutoResultRepository$$EnhancerBySpringCGLIB$$7c1093bd.findAll(<generated>)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:220)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	... 37 common frames omitted
+2021-01-05 13:42:31.768 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-01-05 13:43:08.014 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 6172 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:43:08.018 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:43:09.437 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.157 seconds (JVM running for 4.423)
+2021-01-05 13:43:09.521 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:43:21.886 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:43:21.887 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF671B0000FFFFFF1A0513430366036500000000000000000000000000001462000000000000FFFFFFFFBB14
+2021-01-05 13:43:21.892 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F671B00001214
+2021-01-05 13:43:21.915 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:43:22.457 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:43:22.678 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========升级加密插件==========
+2021-01-05 13:43:22.678 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000582671B00008514
+2021-01-05 13:43:22.816 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 13:43:22.817 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000582671B00000514
+2021-01-05 13:43:22.966 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========结束报文==========
+2021-01-05 13:43:22.992 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2101051343220000FFFFFF135322000AFFFF1A14
+2021-01-05 13:44:47.798 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2021-01-05 13:44:47.798 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012101FFFFFFFFFFFFD5660000FFFFFF1B0513440366036300000000000000000000000000001468000000000000FFFFFFFFD314
+2021-01-05 13:44:47.799 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FD5660000CB14
+2021-01-05 13:44:47.905 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀使能==========
+2021-01-05 13:44:47.907 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000A880100000030D56600007A14
+2021-01-05 13:44:48.200 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2021-01-05 13:44:48.201 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000588D5660000C414
+2021-01-05 13:44:48.270 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀==========
+2021-01-05 13:44:48.275 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000687AAD5660000EE14
+2021-01-05 13:44:55.239 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 5
+2021-01-05 13:44:55.239 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000687AAD56600006E14
+2021-01-05 13:44:55.335 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程开阀==========
+2021-01-05 13:44:55.339 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00068655D56600009814
+2021-01-05 13:45:01.638 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 6
+2021-01-05 13:45:01.639 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000686AAD56600006D14
+2021-01-05 13:45:01.746 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========恢复出厂设置==========
+2021-01-05 13:45:01.747 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00058ED56600004A14
+2021-01-05 13:45:08.098 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 7
+2021-01-05 13:45:08.099 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF00428E3132392E3231312E39322E3234330000000000000000000000000000000000001F94FFFF1353000A00008000000080FFFFFFFFFFFFFFFFFFFFFFFFFFFFD5660000D814
+2021-01-05 13:45:08.198 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========修改网络参数==========
+2021-01-05 13:45:08.258 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5D5660000FFFFFFFFFFFFFFFFA014
+2021-01-05 13:45:09.344 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 8
+2021-01-05 13:45:09.344 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA00000000000000D5660000FFFFFFFFFFFFFFFF0214
+2021-01-05 13:45:09.539 [nioEventLoopGroup-2-1] WARN  c.s.data.JdbcSamplingSumRepository - org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+2021-01-05 13:45:09.540 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - All commands pass, save results to successful table.
+2021-01-05 13:45:09.832 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at com.simit.netty.ServerHandler.updateResult(ServerHandler.java:234)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-05 13:47:33.317 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 12696 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:47:33.324 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:47:35.381 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.917 seconds (JVM running for 6.753)
+2021-01-05 13:47:35.469 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:48:26.586 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:48:26.586 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFFA4730000FFFFFF1B0513480364036400000000000000000000000000001493000000000000FFFFFFFF8414
+2021-01-05 13:48:26.591 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FA4730000A714
+2021-01-05 13:48:26.619 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:48:27.181 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:48:27.373 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========升级加密插件==========
+2021-01-05 13:48:27.373 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000582A47300001A14
+2021-01-05 13:48:27.524 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 13:48:27.525 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000582A47300009A14
+2021-01-05 13:48:27.641 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========结束报文==========
+2021-01-05 13:48:27.657 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2101051348270000FFFFFF135827000AFFFF2E14
+2021-01-05 13:49:23.441 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2021-01-05 13:49:23.442 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012101FFFFFFFFFFFFCE260000FFFFFF190513490365036400000000000000000000000000001500000000000000FFFFFFFF2814
+2021-01-05 13:49:23.444 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FCE2600008414
+2021-01-05 13:49:23.565 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀使能==========
+2021-01-05 13:49:23.570 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000A880100000030CE2600003314
+2021-01-05 13:49:24.056 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2021-01-05 13:49:24.057 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000588CE2600007D14
+2021-01-05 13:49:24.157 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀==========
+2021-01-05 13:49:24.161 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000687AACE260000A714
+2021-01-05 13:49:32.351 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 5
+2021-01-05 13:49:32.352 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000687AACE2600002714
+2021-01-05 13:49:32.452 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程开阀==========
+2021-01-05 13:49:32.456 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00068655CE2600005114
+2021-01-05 13:49:38.776 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 6
+2021-01-05 13:49:38.777 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000686AACE2600002614
+2021-01-05 13:49:38.897 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========恢复出厂设置==========
+2021-01-05 13:49:38.898 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00058ECE2600000314
+2021-01-05 13:49:45.171 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 7
+2021-01-05 13:49:45.171 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF00428E3132392E3231312E39322E3234330000000000000000000000000000000000001F94FFFF1358000A00008000000080FFFFFFFFFFFFFFFFFFFFFFFFFFFFCE2600009614
+2021-01-05 13:49:45.276 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========修改网络参数==========
+2021-01-05 13:49:45.327 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5CE260000FFFFFFFFFFFFFFFF5914
+2021-01-05 13:49:47.735 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 8
+2021-01-05 13:49:47.735 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA00000000000000CE260000FFFFFFFFFFFFFFFFBB14
+2021-01-05 13:49:47.920 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not all commands pass, save results to failed table.
+2021-01-05 13:49:49.171 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [UPDATE t_batch_record SET is_tested=?WHERE id=?]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'where clause'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:862)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:917)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:927)
+	at com.simit.data.JdbcBatchRecordRepository.save(JdbcBatchRecordRepository.java:46)
+	at com.simit.data.JdbcBatchRecordRepository$$FastClassBySpringCGLIB$$749a1faf.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcBatchRecordRepository$$EnhancerBySpringCGLIB$$5d0fc160.save(<generated>)
+	at com.simit.netty.ServerHandler.updateResult(ServerHandler.java:246)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$0(JdbcTemplate.java:867)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617)
+	... 36 common frames omitted
+2021-01-05 13:54:34.512 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 19096 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 13:54:34.518 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 13:54:36.034 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.318 seconds (JVM running for 4.621)
+2021-01-05 13:54:36.123 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 13:55:37.974 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 13:55:37.974 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF65740000FFFFFF190513550366036600000000000000000000000000001543000000000000FFFFFFFF0614
+2021-01-05 13:55:37.981 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F657400006914
+2021-01-05 13:55:38.011 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 13:55:38.540 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 13:55:38.772 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========升级加密插件==========
+2021-01-05 13:55:38.772 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00058265740000DC14
+2021-01-05 13:55:38.924 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 13:55:38.924 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000582657400005C14
+2021-01-05 13:55:39.065 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========结束报文==========
+2021-01-05 13:55:39.088 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2101051355390000FFFFFF140539000AFFFF0D14
+2021-01-05 13:57:32.428 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2021-01-05 13:57:32.429 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012101FFFFFFFFFFFFC5490000FFFFFF190513570366036500000000000000000000000000001550000000000000FFFFFFFFA214
+2021-01-05 13:57:32.431 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FC54900009E14
+2021-01-05 13:57:32.542 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀使能==========
+2021-01-05 13:57:32.547 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000A880100000030C54900004D14
+2021-01-05 13:57:32.982 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2021-01-05 13:57:32.983 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000588C54900009714
+2021-01-05 13:57:33.059 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀==========
+2021-01-05 13:57:33.063 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000687AAC5490000C114
+2021-01-05 13:57:40.048 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 5
+2021-01-05 13:57:40.049 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000687AAC54900004114
+2021-01-05 13:57:40.169 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程开阀==========
+2021-01-05 13:57:40.171 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00068655C54900006B14
+2021-01-05 13:57:46.418 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 6
+2021-01-05 13:57:46.419 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000686AAC54900004014
+2021-01-05 13:57:46.519 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========恢复出厂设置==========
+2021-01-05 13:57:46.520 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00058EC54900001D14
+2021-01-05 13:57:52.840 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 7
+2021-01-05 13:57:52.840 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF00428E3132392E3231312E39322E3234330000000000000000000000000000000000001F94FFFF1405000A00008000000080FFFFFFFFFFFFFFFFFFFFFFFFFFFFC54900005E14
+2021-01-05 13:57:52.962 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========修改网络参数==========
+2021-01-05 13:57:53.017 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5C5490000FFFFFFFFFFFFFFFF7314
+2021-01-05 13:57:54.756 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 8
+2021-01-05 13:57:54.757 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA00000000000000C5490000FFFFFFFFFFFFFFFFD514
+2021-01-05 13:57:54.941 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - All commands pass, save results to successful table.
+2021-01-05 16:04:27.147 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 5380 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 16:04:27.154 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 16:04:28.707 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.559 seconds (JVM running for 5.168)
+2021-01-05 16:04:28.797 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 16:07:22.937 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 16:07:22.937 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF0C640000FFFFFF190516070367036500000000000000000000000000001925000000000000FFFFFFFF3814
+2021-01-05 16:07:22.943 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F0C6400000014
+2021-01-05 16:07:22.966 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 16:07:23.553 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 16:07:23.793 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========升级加密插件==========
+2021-01-05 16:07:23.793 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF0005820C6400007314
+2021-01-05 16:07:24.127 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 16:07:24.128 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0005820C640000F314
+2021-01-05 16:07:24.353 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 9
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:101)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:893)
+	at com.simit.data.JdbcResultRepository.save(JdbcResultRepository.java:85)
+	at com.simit.data.JdbcResultRepository$$FastClassBySpringCGLIB$$2f7af92d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcResultRepository$$EnhancerBySpringCGLIB$$59044c9e.save(<generated>)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:118)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: No value specified for parameter 9
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1115)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$1(JdbcTemplate.java:894)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617)
+	... 33 common frames omitted
+2021-01-05 16:08:38.373 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 15836 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 16:08:38.379 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 16:08:39.948 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.345 seconds (JVM running for 4.742)
+2021-01-05 16:08:40.060 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 16:08:55.192 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 16:08:55.192 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF534E0000FFFFFF1A0516080366036400000000000000000000000000001925000000000000FFFFFFFF6914
+2021-01-05 16:08:55.199 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F534E00003114
+2021-01-05 16:08:55.227 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 16:08:55.825 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 16:08:56.058 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========升级加密插件==========
+2021-01-05 16:08:56.059 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000582534E0000A414
+2021-01-05 16:08:56.205 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 16:08:56.206 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000582534E00002414
+2021-01-05 16:08:56.356 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========结束报文==========
+2021-01-05 16:08:56.375 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2101051608560000FFFFFF161856000AFFFF1214
+2021-01-05 16:10:00.303 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2021-01-05 16:10:00.304 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012101FFFFFFFFFFFFF9010000FFFFFF190516100368036600000000000000000000000000001931000000000000FFFFFFFF3214
+2021-01-05 16:10:00.306 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FF90100008A14
+2021-01-05 16:10:00.439 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀使能==========
+2021-01-05 16:10:00.444 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000A880100000030F90100003914
+2021-01-05 16:10:00.935 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2021-01-05 16:10:00.936 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000588F90100008314
+2021-01-05 16:10:01.061 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀==========
+2021-01-05 16:10:01.065 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000687AAF9010000AD14
+2021-01-05 16:10:07.949 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 5
+2021-01-05 16:10:07.949 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000687AAF90100002D14
+2021-01-05 16:10:08.076 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程开阀==========
+2021-01-05 16:10:08.080 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00068655F90100005714
+2021-01-05 16:10:14.346 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 6
+2021-01-05 16:10:14.347 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000686AAF90100002C14
+2021-01-05 16:10:14.468 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========恢复出厂设置==========
+2021-01-05 16:10:14.468 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00058EF90100000914
+2021-01-05 16:10:20.837 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 7
+2021-01-05 16:10:20.838 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF00428E3132392E3231312E39322E3234330000000000000000000000000000000000001F94FFFF1618000A00008000000080FFFFFFFFFFFFFFFFFFFFFFFFFFFFF90100005F14
+2021-01-05 16:10:20.971 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========修改网络参数==========
+2021-01-05 16:10:21.033 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5F9010000FFFFFFFFFFFFFFFF5F14
+2021-01-05 16:10:22.070 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 8
+2021-01-05 16:10:22.070 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA00000000000000F9010000FFFFFFFFFFFFFFFFC114
+2021-01-05 16:10:22.309 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - All commands pass, save results to successful table.
+2021-01-05 16:10:22.441 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+org.springframework.dao.TransientDataAccessResourceException: PreparedStatementCallback; SQL [INSERT INTO t_sampling_inspection_success (deviceid, batch_id, sampling_flag, origin_data, command_code, command_name, control_code, successful_code, ts) VALUES (?, ?, ?, ?, ?, ?, ?, ?)]; Parameter index out of range (9 > number of parameters, which is 8).; nested exception is java.sql.SQLException: Parameter index out of range (9 > number of parameters, which is 8).
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:110)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:647)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:936)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:990)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:981)
+	at com.simit.data.JdbcResultRepository.saveToSuccessful(JdbcResultRepository.java:136)
+	at com.simit.data.JdbcResultRepository$$FastClassBySpringCGLIB$$2f7af92d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.simit.data.JdbcResultRepository$$EnhancerBySpringCGLIB$$5ca1ebb8.saveToSuccessful(<generated>)
+	at com.simit.netty.ServerHandler.updateResult(ServerHandler.java:231)
+	at com.simit.netty.ServerHandler.channelRead(ServerHandler.java:191)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:93)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Parameter index out of range (9 > number of parameters, which is 8).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1372)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1385)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setObject(ClientPreparedStatement.java:1669)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setObject(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.StatementCreatorUtils.setValue(StatementCreatorUtils.java:409)
+	at org.springframework.jdbc.core.StatementCreatorUtils.setParameterValueInternal(StatementCreatorUtils.java:231)
+	at org.springframework.jdbc.core.StatementCreatorUtils.setParameterValue(StatementCreatorUtils.java:162)
+	at org.springframework.jdbc.core.JdbcTemplate$2.setValues(JdbcTemplate.java:1011)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$batchUpdate$2(JdbcTemplate.java:944)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617)
+	... 37 common frames omitted
+2021-01-05 16:12:33.039 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 6544 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-05 16:12:33.046 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-05 16:12:35.152 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 3.295 seconds (JVM running for 6.875)
+2021-01-05 16:12:35.248 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-05 16:13:50.098 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 1
+2021-01-05 16:13:50.098 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF1C2E0000FFFFFF190516130368036300000000000000000000000000001931000000000000FFFFFFFF2914
+2021-01-05 16:13:50.103 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F1C2E0000DA14
+2021-01-05 16:13:50.126 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-05 16:13:50.648 [nioEventLoopGroup-2-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-05 16:13:50.845 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========升级加密插件==========
+2021-01-05 16:13:50.846 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF0005821C2E00004D14
+2021-01-05 16:13:51.345 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 2
+2021-01-05 16:13:51.346 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0005821C2E0000CD14
+2021-01-05 16:13:51.499 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========结束报文==========
+2021-01-05 16:13:51.508 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2101051613510000FFFFFF162351000AFFFF1E14
+2021-01-05 16:14:41.253 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 3
+2021-01-05 16:14:41.253 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012101FFFFFFFFFFFF63660000FFFFFF190516140366036300000000000000000000000000001931000000000000FFFFFFFF0014
+2021-01-05 16:14:41.254 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F636600005914
+2021-01-05 16:14:41.371 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀使能==========
+2021-01-05 16:14:41.373 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000A880100000030636600000814
+2021-01-05 16:14:41.857 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 4
+2021-01-05 16:14:41.858 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000588636600005214
+2021-01-05 16:14:41.957 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀==========
+2021-01-05 16:14:41.960 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000687AA636600007C14
+2021-01-05 16:14:48.902 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 5
+2021-01-05 16:14:48.902 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000687AA63660000FC14
+2021-01-05 16:14:48.993 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程开阀==========
+2021-01-05 16:14:48.997 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00068655636600002614
+2021-01-05 16:14:55.299 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 6
+2021-01-05 16:14:55.299 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000686AA63660000FB14
+2021-01-05 16:14:55.392 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========恢复出厂设置==========
+2021-01-05 16:14:55.393 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00058E63660000D814
+2021-01-05 16:15:01.717 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 7
+2021-01-05 16:15:01.718 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF00428E3132392E3231312E39322E3234330000000000000000000000000000000000001F94FFFF1623000A00008000000080FFFFFFFFFFFFFFFFFFFFFFFFFFFF636600003914
+2021-01-05 16:15:01.811 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========修改网络参数==========
+2021-01-05 16:15:01.860 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D563660000FFFFFFFFFFFFFFFF2E14
+2021-01-05 16:15:03.050 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 8
+2021-01-05 16:15:03.051 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA0000000000000063660000FFFFFFFFFFFFFFFF9014
+2021-01-05 16:15:03.222 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not all commands pass, save results to failed table.
+2021-01-05 16:18:19.553 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 9
+2021-01-05 16:18:19.553 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFF9B5C0000FFFFFF180516180366036400000000000000000000000000001937000000000000FFFFFFFFDF14
+2021-01-05 16:18:19.555 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058F9B5C00008714
+2021-01-05 16:18:19.631 [nioEventLoopGroup-2-1] WARN  c.s.data.JdbcBatchRecordRepository - org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+2021-01-05 16:18:19.632 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 16:18:19.632 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 发送切换IP命令.
+2021-01-05 16:18:19.663 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D59B5C0000FFFFFFFFFFFFFFFF5C14
+2021-01-05 16:18:21.392 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 10
+2021-01-05 16:18:21.392 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA000000000000009B5C0000FFFFFFFFFFFFFFFFBE14
+2021-01-05 16:18:21.451 [nioEventLoopGroup-2-1] WARN  c.s.data.JdbcBatchRecordRepository - org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+2021-01-05 16:18:21.452 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - Not found batch record from t_batch_record!
+2021-01-05 16:18:21.452 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - 切换IP命令结果: 成功
+2021-01-05 16:19:54.190 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 11
+2021-01-05 16:19:54.190 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D510865602040034917230301210105A0FFFFFFFFAF5A0000FFFFFF190516200365036400000000000000000000000000001937000000000000FFFFFFFFF914
+2021-01-05 16:19:54.191 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FAF5A00009914
+2021-01-05 16:19:54.256 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========升级加密插件==========
+2021-01-05 16:19:54.256 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000582AF5A00000C14
+2021-01-05 16:19:54.852 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 12
+2021-01-05 16:19:54.852 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000582AF5A00008C14
+2021-01-05 16:19:54.954 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========结束报文==========
+2021-01-05 16:19:54.955 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00135F2101051619540000FFFFFF162954000AFFFF3014
+2021-01-05 16:20:41.663 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 13
+2021-01-05 16:20:41.663 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068000FFFFFF003D5108656020400349172303012101FFFFFFFFFFFFD7480000FFFFFF190516200365036200000000000000000000000000001937000000000000FFFFFFFF6614
+2021-01-05 16:20:41.664 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068080FFFFFF00058FD7480000AF14
+2021-01-05 16:20:41.774 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀使能==========
+2021-01-05 16:20:41.775 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000A880100000030D74800005E14
+2021-01-05 16:20:42.169 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 14
+2021-01-05 16:20:42.169 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000588D7480000A814
+2021-01-05 16:20:42.233 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程关阀==========
+2021-01-05 16:20:42.233 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF000687AAD7480000D214
+2021-01-05 16:20:49.217 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 15
+2021-01-05 16:20:49.217 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000687AAD74800005214
+2021-01-05 16:20:49.315 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========远程开阀==========
+2021-01-05 16:20:49.316 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00068655D74800007C14
+2021-01-05 16:20:55.611 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 16
+2021-01-05 16:20:55.612 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF000686AAD74800005114
+2021-01-05 16:20:55.704 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========恢复出厂设置==========
+2021-01-05 16:20:55.705 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF00058ED74800002E14
+2021-01-05 16:21:02.664 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 17
+2021-01-05 16:21:02.665 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF00428E3132392E3231312E39322E3234330000000000000000000000000000000000001F94FFFF1629000A00008000000080FFFFFFFFFFFFFFFFFFFFFFFFFFFFD74800009514
+2021-01-05 16:21:02.764 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - ==========修改网络参数==========
+2021-01-05 16:21:02.794 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Encoder - send to client: 150303351990068000FFFFFF002F816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5D7480000FFFFFFFFFFFFFFFF8414
+2021-01-05 16:21:03.943 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - count: 18
+2021-01-05 16:21:03.943 [nioEventLoopGroup-2-1] INFO  com.simit.netty.encode.Decoder - received from client: 150303351990068080FFFFFF0037816E6272632E73686761732E636F6D2E636E00000000000000000000000000000017D5DA00000000000000D7480000FFFFFFFFFFFFFFFFE614
+2021-01-05 16:21:04.097 [nioEventLoopGroup-2-1] INFO  com.simit.netty.ServerHandler - All commands pass, save results to successful table.

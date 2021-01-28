@@ -27,7 +27,7 @@ public class JdbcEncryptResultRepository implements EncryptResultRepository{
 
     @Override
     public EncryptResult findOne(String gasId) {
-        String sql = "SELECT id, deviceid, batch_id, sampling_flg, export_ts, flag FROM t_encryption_function_verification WHERE deviceid=?  AND sampling_flg IS NOT NULL AND flag IS NULL ORDER BY export_ts DESC LIMIT 1";
+        String sql = "SELECT deviceid, batch_id, sampling_flg, export_ts, flag FROM t_encryption_function_verification WHERE deviceid=? AND sampling_flg IS NOT NULL AND flag IS NULL ORDER BY export_ts DESC LIMIT 1";
 
         try{
             return jdbc.queryForObject(sql, this::mapToEncryptResult, gasId);
@@ -52,8 +52,7 @@ public class JdbcEncryptResultRepository implements EncryptResultRepository{
 
 
     private EncryptResult mapToEncryptResult(ResultSet rs, int rowNum) throws SQLException{
-        return new EncryptResult(rs.getLong("id"),
-                rs.getString("deviceid"),
+        return new EncryptResult(rs.getString("deviceid"),
                 rs.getString("batch_id"),
                 rs.getInt("sampling_flg"),
                 rs.getLong("export_ts"),

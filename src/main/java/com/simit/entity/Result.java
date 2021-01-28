@@ -1,27 +1,27 @@
 package com.simit.entity;
 
-import java.time.LocalDateTime;
-
 /**
  * @Author: ys xu
  * @Date: 2020/10/11 21:05
  */
-public class AutoResult {
+public class Result {
 
     private Long id;
     private String gasId;
     private String batchId;
+    private String samplingFlag;
     private String originData;
     private String commandCode;
     private String commandName;
     private String controlCode;
-    private Boolean successfulCode;
+    private String successfulCode;
     private Long createTime;
 
 
-    public AutoResult(String gasId, String batchId, String originData, String commandCode, String commandName, String controlCode, Boolean successfulCode, Long createTime) {
+    public Result(String gasId, String batchId, String samplingFlag, String originData, String commandCode, String commandName, String controlCode, String successfulCode, Long createTime) {
         this.gasId = gasId;
         this.batchId = batchId;
+        this.samplingFlag = samplingFlag;
         this.originData = originData;
         this.commandCode = commandCode;
         this.commandName = commandName;
@@ -30,16 +30,25 @@ public class AutoResult {
         this.createTime = createTime;
     }
 
-    public AutoResult(Long id, String gasId, String batchId, String originData, String commandCode, String commandName, String controlCode, Boolean successfulCode, Long createTime) {
+    public Result(Long id, String gasId, String batchId, String samplingFlag, String originData, String commandCode, String commandName, String controlCode, String successfulCode, Long createTime) {
         this.id = id;
         this.gasId = gasId;
         this.batchId = batchId;
+        this.samplingFlag = samplingFlag;
         this.originData = originData;
         this.commandCode = commandCode;
         this.commandName = commandName;
         this.controlCode = controlCode;
         this.successfulCode = successfulCode;
         this.createTime = createTime;
+    }
+
+    public String getSamplingFlag() {
+        return samplingFlag;
+    }
+
+    public void setSamplingFlag(String samplingFlag) {
+        this.samplingFlag = samplingFlag;
     }
 
     public Long getId() {
@@ -98,11 +107,11 @@ public class AutoResult {
         this.controlCode = controlCode;
     }
 
-    public Boolean getSuccessfulCode() {
+    public String getSuccessfulCode() {
         return successfulCode;
     }
 
-    public void setSuccessfulCode(Boolean successfulCode) {
+    public void setSuccessfulCode(String successfulCode) {
         this.successfulCode = successfulCode;
     }
 

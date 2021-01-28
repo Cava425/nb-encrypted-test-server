@@ -72,17 +72,9 @@ public class Decoder extends MessageToMessageDecoder<DatagramPacket> {
 
             datagram.setRandNum(calculateRandNum(datagram.toString()));
 
-
+            out.add(datagram);
         } catch (Exception e) {
             logger.warn("Decoding datagram failure, Maybe some data fields have errors", e);
-            datagram = null;
-        }
-
-        try {
-            out.add(datagram);
-        } catch (NullPointerException e) {
-            logger.warn("Decoding datagram failure, added String Object with \"\"", e);
-            out.add("");
         }
     }
 

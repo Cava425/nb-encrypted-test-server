@@ -15,7 +15,7 @@ public class EncryptResult {
     private String originData;
     private Long ts;
 
-    public EncryptResult(Long id, String gasId, String batchId, Integer samplingFlag, Long exportTs, Integer flag) {
+    public EncryptResult(String gasId, String batchId, Integer samplingFlag, Long exportTs, Integer flag) {
         this.id = id;
         this.gasId = gasId;
         this.batchId = batchId;
@@ -23,6 +23,7 @@ public class EncryptResult {
         this.exportTs = exportTs;
         this.flag = flag;
     }
+
 
     public Long getId() {
         return id;

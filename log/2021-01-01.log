@@ -1,0 +1,4 @@
+2021-01-01 12:00:34.069 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-97M998T with PID 9332 (C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server\target\classes started by Haita in C:\Users\Haita\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-01 12:00:34.077 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-01 12:00:35.678 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.429 seconds (JVM running for 5.926)
+2021-01-01 12:00:35.770 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084

@@ -1,0 +1,8 @@
+2021-01-28 14:44:33.956 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-SI10Q2F with PID 3764 (C:\Users\11983\Desktop\GitHub\nb-encrypted-test-server\target\classes started by 11983 in C:\Users\11983\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-28 14:44:33.960 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-28 14:44:36.222 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 2.856 seconds (JVM running for 4.51)
+2021-01-28 14:44:36.273 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084
+2021-01-28 16:07:12.079 [main] INFO  com.simit.NBTestServerApplication - Starting NBTestServerApplication on DESKTOP-SI10Q2F with PID 11196 (C:\Users\11983\Desktop\GitHub\nb-encrypted-test-server\target\classes started by 11983 in C:\Users\11983\Desktop\GitHub\nb-encrypted-test-server)
+2021-01-28 16:07:12.082 [main] INFO  com.simit.NBTestServerApplication - No active profile set, falling back to default profiles: default
+2021-01-28 16:07:12.812 [main] INFO  com.simit.NBTestServerApplication - Started NBTestServerApplication in 1.0 seconds (JVM running for 2.33)
+2021-01-28 16:07:12.862 [main] INFO  com.simit.netty.NettyServer - Server start listen at 8084

@@ -1,6 +1,8 @@
 package com.simit.data;
 
-import com.simit.entity.BatchSum;
+import com.simit.entity.SamplingSum;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -15,31 +17,34 @@ import java.sql.SQLException;
  */
 
 @Repository
-public class JdbcBatchSumRepository implements BatchSumRepository {
+public class JdbcSamplingSumRepository implements SamplingSumRepository {
+
+    private final static Logger logger = LoggerFactory.getLogger(JdbcSamplingSumRepository.class);
+
 
     private JdbcTemplate jdbc;
 
     @Autowired
-    public JdbcBatchSumRepository(JdbcTemplate jdbc){
+    public JdbcSamplingSumRepository(JdbcTemplate jdbc){
         this.jdbc = jdbc;
     }
 
     @Override
-    public BatchSum findOne(String batchId, String samplingFlag) {
-        String sql = "SELECT id, batch_id, sampling_flag, successful_num, failure_num, total_num, ts FROM t_batch_sum WHERE batch_id=? AND sampling_flag=?";
+    public SamplingSum findOne(String batchId, String samplingFlag) {
+        String sql = "SELECT id, batch_id, sampling_flag, successful_num, failure_num, total_num, ts FROM t_sampling_sum WHERE batch_id=? AND sampling_flag=?";
         try{
             return jdbc.queryForObject(sql, this::mapToBatchSum, batchId, samplingFlag);
         }catch (EmptyResultDataAccessException e){
-            e.printStackTrace();
+            logger.warn(e.toString());
         }
         return null;
     }
 
     @Override
-    public BatchSum save(BatchSum bs) {
-        String sql = "UPDATE t_batch_sum SET successful_num=?, failure_num=?, total_num=? WHERE id=?";
+    public SamplingSum save(SamplingSum bs) {
+        String sql = "UPDATE t_sampling_sum SET successful_num=?, failure_num=?, ts=? WHERE id=?";
 
-        if(1 == jdbc.update(sql, bs.getSuccessfulNum(), bs.getFailureNum(), bs.getTotalNum(), bs.getId())){
+        if(1 == jdbc.update(sql, bs.getSuccessfulNum(), bs.getFailureNum(), bs.getTs(), bs.getId())){
             return bs;
         }
 
@@ -47,8 +52,8 @@ public class JdbcBatchSumRepository implements BatchSumRepository {
     }
 
 
-    private BatchSum mapToBatchSum(ResultSet rs, int rowNum) throws SQLException {
-        return new BatchSum(rs.getLong("id"),
+    private SamplingSum mapToBatchSum(ResultSet rs, int rowNum) throws SQLException {
+        return new SamplingSum(rs.getLong("id"),
                 rs.getString("batch_id"),
                 Integer.valueOf(rs.getString("sampling_flag")),
                 rs.getInt("successful_num"),
